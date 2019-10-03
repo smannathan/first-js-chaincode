@@ -76,6 +76,7 @@ describe('FirstJsChaincodeContract-first-js-chaincode@0.0.1', () => {
             // TODO: Update with parameters of transaction
             const args = ['11', 'first'];
 
+            //const response = await SmartContractUtil.submitTransaction('ClaimSubmissionContract', 'submitClaim', args, gateway); // Returns buffer of transaction return value
             const response = await SmartContractUtil.submitTransaction('FirstJsChaincodeContract', 'createFirstJsChaincode', args, gateway); // Returns buffer of transaction return value
             console.log(response.toString());
             // TODO: Update with return value of transaction
